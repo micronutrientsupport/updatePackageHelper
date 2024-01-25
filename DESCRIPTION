@@ -11,3 +11,5 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
 Imports: 
     sendmailR
+URL: https://github.com/bgsandan/emailDataPackage
+BugReports: https://github.com/bgsandan/emailDataPackage/issues
