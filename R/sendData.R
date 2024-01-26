@@ -32,6 +32,8 @@ sendData <- function(dataframes_list) {
     # Clean up: remove temporary .rda files
     file.remove(attachments)
 
-    return(attachments)
+    res <- list("Hello")
+
+    return(res)
 }
 
