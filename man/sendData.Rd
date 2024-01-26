@@ -4,7 +4,10 @@
 \alias{sendData}
 \title{Send Data}
 \usage{
-sendData()
+sendData(dataframes_list)
+}
+\arguments{
+\item{dataframes_list}{list of data to send}
 }
 \value{
 output
