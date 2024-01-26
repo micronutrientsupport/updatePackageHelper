@@ -18,7 +18,8 @@ sendData <- function(dataframeList) {
   # Save named dataframes as .rda files
   for (name in names(dataframeList)) {
     df <- dataframeList[[name]]
-    save(df, file=paste0(name, ".rda"))
+    assign(name, df)
+    save(list=name, file=paste0(name, ".rda"))
   }
   
   # Attach .rda files to the email
