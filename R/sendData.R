@@ -12,11 +12,11 @@
 #'
 #' @export
 
-sendData <- function(dataframes_list) {
+sendData <- function(dataframeList) {
   sendmailR::sendmail_options(smtpServer=Sys.getenv("SMTP_SERVER"),verbose=TRUE)
     # Save named dataframes as .rda files
-    for (name in names(dataframes_list)) {
-      saveRDS(dataframes_list[[name]], file = paste0(name, ".rda"))
+    for (name in names(dataframeList)) {
+      saveRDS(dataframeList[[name]], file = paste0(name, ".rda"))
     }
 
     # Attach .rda files to the email
