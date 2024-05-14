@@ -14,5 +14,5 @@
 
 updatePackage <- function() {
   install.packages(Sys.getenv("PACKAGE_URL"), repos=NULL, type="source")
-  return(TRUE)
+  return(Sys.getenv("PACKAGE_URL"))
 }
