@@ -13,6 +13,6 @@
 #' @export
 
 updatePackage <- function() {
-  install.packages(Sys.getenv("PACKAGE_URL"), repos=NULL, type="source")
+  install.packages(Sys.getenv("PACKAGE_URL"), repos=NULL, type="source", INSTALL_opts = '--no-lock')
   return(Sys.getenv("PACKAGE_URL"))
 }
