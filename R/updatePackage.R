@@ -13,7 +13,10 @@
 #' @export
 
 updatePackage <- function() {
- # Sys.info()
- # install.packages(Sys.getenv("PACKAGE_URL"), repos=NULL, lib="/usr/local/lib/R/site-library", type="source", INSTALL_opts = '--no-lock')
+  install.packages(Sys.getenv("PACKAGE_URL"), repos=NULL, lib="/usr/local/lib/R/site-library", type="source", INSTALL_opts = '--no-lock')
   return(Sys.info())
 }
+
+
+#sudo chgrp -R www-data /usr/local/lib/R/site-library/ 
+#sudo chmod -R g+w  /usr/local/lib/R/site-library/ 
