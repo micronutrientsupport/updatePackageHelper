@@ -13,7 +13,7 @@
 #' @export
 
 updatePackage <- function() {
-  Sys.info()
-  install.packages(Sys.getenv("PACKAGE_URL"), repos=NULL, lib="/usr/local/lib/R/site-library", type="source", INSTALL_opts = '--no-lock')
-  return(.Library)
+ # Sys.info()
+ # install.packages(Sys.getenv("PACKAGE_URL"), repos=NULL, lib="/usr/local/lib/R/site-library", type="source", INSTALL_opts = '--no-lock')
+  return(Sys.info())
 }
