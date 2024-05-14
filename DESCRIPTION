@@ -1,4 +1,4 @@
-Package: emailDataPackage
+Package: updatePackageHelper
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
@@ -11,5 +11,5 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
 Imports: 
     sendmailR
-URL: https://github.com/bgsandan/emailDataPackage
-BugReports: https://github.com/bgsandan/emailDataPackage/issues
+URL: https://github.com/micronutrientsupport/updatePackageHelper
+BugReports: https://github.com/micronutrientsupport/updatePackageHelper/issues
