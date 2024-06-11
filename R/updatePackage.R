@@ -13,6 +13,7 @@
 #' @export
 
 updatePackage <- function() {
+  options(timeout = max(100000, getOption("timeout")))
   install.packages(Sys.getenv("PACKAGE_URL"), repos=NULL, lib="/usr/local/lib/R/site-library", type="source", INSTALL_opts = '--no-lock')
   Sys.info()
   return(Sys.getenv("PACKAGE_URL"))
