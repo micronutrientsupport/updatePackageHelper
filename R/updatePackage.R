@@ -14,7 +14,8 @@
 
 updatePackage <- function() {
   install.packages(Sys.getenv("PACKAGE_URL"), repos=NULL, lib="/usr/local/lib/R/site-library", type="source", INSTALL_opts = '--no-lock')
-  return(Sys.info())
+  Sys.info()
+  return(Sys.getenv("PACKAGE_URL"))
 }
 
 
